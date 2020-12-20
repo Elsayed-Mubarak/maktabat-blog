@@ -11,19 +11,7 @@ export default function Home() {
       </Head>
       <main >
         <div>
-          <div className="HoverContainer">
-            <div className="sayedcol">
-              list
-            </div>
-            <div className="sayedcol">
-              <div className="fontTest">
-                cart
-              </div>
-              <div className="fontTest">
-                cart
-              </div>
-            </div>
-          </div>
+       
         </div>
       </main>
     </div>
