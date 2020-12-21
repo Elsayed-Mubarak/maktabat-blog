@@ -11,6 +11,7 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.2",
     "@emotion/styled": "^11.0.0",
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@zeit/next-css": "^1.0.1",
@@ -21,6 +22,7 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
     "sass": "^1.30.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "styled-components": "^5.2.1"
   }
 }

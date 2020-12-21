@@ -1,15 +1,15 @@
 import React from 'react';
 import { Button } from 'react-bootstrap'
-
+import styles from './index.module.css'
 import { MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdbreact';
 export default function contact() {
     return (
-        <>
-         <MDBContainer>
+        <div className="container">
+         <MDBContainer className={styles.contactus}>
                 <MDBRow>
                     <MDBCol md="6">
                         <form>
-                            <p className="h5 text-center mb-4">Contact US</p>
+                            <p className="h5 text-center mb-4">Let's Talk</p>
                             <div className="grey-text">
                                 <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
                                     success="right" />
@@ -25,6 +25,6 @@ export default function contact() {
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
-        </>
+        </div>
     );
 }

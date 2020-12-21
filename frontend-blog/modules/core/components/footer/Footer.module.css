@@ -1,0 +1,11 @@
+.foo{
+     position: absolute; bottom: 0; width: 100%; 
+    }
+.textcenter {
+    text-align: -webkit-left!important;
+        margin: 100px 100px 0px 100px;
+}
+
+.paddingbetweennav{
+    margin-bottom: 150px;
+ }

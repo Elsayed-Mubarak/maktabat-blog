@@ -3,10 +3,12 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Dropdown } from 'r
 import { useEffect } from 'react'
 import styles from './NavBar.module.css'
 import LanguageSwitcher from '../language_switcher/LanguageSwitcher'
+
+
 export default function NavBar() {
   return (
-    <div className="navbarRuler">
-      <Navbar bg="light" expand="lg">
+    <div className="" >
+      <Navbar expand="lg" className={styles.nav} >
         <Navbar.Brand href="/">Kware-Blog</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
