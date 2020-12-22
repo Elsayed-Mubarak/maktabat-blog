@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 import { Button } from 'reactstrap'
-import { i18n, withTranslation } from '../../../i18n'
+import { i18n, withTranslation } from '../../../../../i18n'
 import { useContext } from 'react'
 import { I18nContext } from 'next-i18next'
 
