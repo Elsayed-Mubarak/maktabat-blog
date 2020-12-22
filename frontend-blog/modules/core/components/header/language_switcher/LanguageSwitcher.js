@@ -1,12 +1,17 @@
 import styled from "@emotion/styled"
+import { Button } from 'reactstrap'
+import { i18n, withTranslation } from '../../../i18n'
+import { useContext } from 'react'
+import { I18nContext } from 'next-i18next'
+
 
 function LanguageSwitcher() {
 
     return (
-        <LanguageSwitcherStyled>
-            <button type="button" onClick={() => { ar }}></button>
-            <button type="button" onClick={() => { en }}></button>
-        </LanguageSwitcherStyled>
+        <>
+            <Button color="secondary" size="sm">English</Button>
+
+        </>
     )
 }
 

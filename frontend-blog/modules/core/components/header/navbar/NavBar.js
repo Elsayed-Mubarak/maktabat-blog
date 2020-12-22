@@ -7,9 +7,9 @@ import LanguageSwitcher from '../language_switcher/LanguageSwitcher'
 
 export default function NavBar() {
   return (
-    <div style={{'color':'#2f2e8b'}} >
+    <div style={{ 'color': '#2f2e8b' }} >
       <Navbar expand="lg" className={styles.nav} >
-        <Navbar.Brand href="/">Kware-Blog</Navbar.Brand>
+        <Navbar.Brand href="/">Kwareict</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -26,9 +26,13 @@ export default function NavBar() {
             </NavDropdown>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
+          <div>
+            <style jsx>{`
 
-          <LanguageSwitcher />
 
+            `}</style>
+            <LanguageSwitcher />
+          </div>
         </Navbar.Collapse>
       </Navbar>
     </div>

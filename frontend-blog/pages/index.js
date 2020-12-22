@@ -1,8 +1,11 @@
 import Head from 'next/head'
 //import styles from '../styles/Home.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchAppBar from '../modules/blog/components/searchbox/SearchBox'
-export default function Home() {
+import DropdownFilter from '../modules/blog/components/dropdownfilter/DropdownFilter'
+import Card from '../modules/blog/components/card/Cards'
+
+
+export default function Home({ blogs, URL }) {
   return (
     <div>
       <Head>
@@ -11,9 +14,27 @@ export default function Home() {
       </Head>
       <main >
         <div>
-        <SearchAppBar/>
+          <SearchAppBar />
+          <DropdownFilter />
+          <Card blogs={blogs} URL={URL} />
         </div>
       </main>
     </div>
   )
+}
+
+
+export async function getServerSideProps() {
+  const { API_URL } = process.env;
+  const res = await fetch(`${API_URL}/articles`)
+  console.log("....test ................", API_URL);
+
+  const data = await res.json()
+
+  return {
+    props: {
+      blogs: data,
+      URL: API_URL
+    }
+  }
 }
