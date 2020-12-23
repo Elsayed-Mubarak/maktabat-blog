@@ -9,7 +9,7 @@ function LanguageSwitcher() {
     const changeLanguage = (lang) => {
         console.log("........language.....", lang);
         if (lang === 'English') {
-            setTitle('Arabic')
+            setTitle('العربية')
         } else {
             setTitle('English')
         }

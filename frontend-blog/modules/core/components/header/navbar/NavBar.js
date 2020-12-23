@@ -3,13 +3,19 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Dropdown } from 'r
 import { useEffect } from 'react'
 import styles from './NavBar.module.css'
 import LanguageSwitcher from '../language_switcher/LanguageSwitcher'
-
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function NavBar() {
   return (
     <div style={{ 'color': '#2f2e8b' }} >
       <Navbar expand="lg" className={styles.nav} >
-        <Navbar.Brand href="/">Kwareict</Navbar.Brand>
+
+        <Navbar.Brand href="/"><Image src="/images/logo.png"
+          alt="Picture of the author"
+          width={250}
+          height={120} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -24,6 +30,7 @@ export default function NavBar() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Translate</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
           <div>

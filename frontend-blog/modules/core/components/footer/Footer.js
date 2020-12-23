@@ -5,6 +5,34 @@ export default function Footer() {
     return (
 
         <footer style={{ 'margin-top': '300px' }} className="bg-light text-lg-start" className={styles.textcenter}>
+            <style jsx>{`
+  .social-footer {
+    padding: 1rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+  }
+      `}</style>
             <div className=" p-4 " className={styles.paddingbetweennav}>
                 <div className="row">
                     <div className="col-lg-3 col-md-12 mb-4 mb-md-0">
