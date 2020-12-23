@@ -1,5 +1,7 @@
 *{
   color: #2f2e8b;
+  background-color:  #f2f4ff !important;
+
 }
 .social-footer {
     padding: 1rem;
@@ -31,5 +33,4 @@
   
 body {
   background-color:  #f2f4ff !important;
-  
 }

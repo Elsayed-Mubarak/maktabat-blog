@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import styles from './DropdownFilter.module.css'
+
+
 const Example = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const toggle = () => setDropdownOpen(prevState => !prevState);
 
     return (
-        <div className={styles.alldropdown}>
-     
+        <div className={styles.alldropdown} >
+
             <Dropdown className="container" isOpen={dropdownOpen} toggle={toggle}  >
-                <DropdownToggle caret>
+                <DropdownToggle caret style={{ color: '#2f2e8b' }}>
                     Categories
-        </DropdownToggle>
+            </DropdownToggle>
                 <DropdownMenu className={styles.dropdown} >
                     <DropdownItem >All</DropdownItem>
                     <DropdownItem>Electronic Libraries</DropdownItem>

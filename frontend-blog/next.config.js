@@ -1,6 +1,9 @@
 const path = require('path')
 require('dotenv').config()
 const { nextI18NextRewrites } = require('next-i18next/rewrites')
+//const withCSS = require('@zeit/next-css')
+
+
 
 const localeSubpaths = {
     ar: 'ar'
@@ -21,5 +24,12 @@ module.exports = {
         config.resolve.alias['public'] = path.join(__dirname, 'public')
 
         return config
-    }
+    },
+
 }
+
+/*
+module.exports = withCSS({
+    cssModules: true  // After true than use import statement in next.js
+})
+*/
