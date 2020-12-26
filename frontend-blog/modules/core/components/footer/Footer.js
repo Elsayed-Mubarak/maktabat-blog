@@ -6,8 +6,10 @@ export default function Footer() {
 
         <footer style={{ 'margin-top': '300px' }} className="bg-light text-lg-start" className={styles.textcenter}>
             <style jsx>{`
-  .social-footer {
+
+.social-footer {
     padding: 1rem;
+    background: #8a8a8a;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -32,6 +34,8 @@ export default function Footer() {
     color: #4a4a4a;
     transition: color 0.3s ease-in;
   }
+  
+  
       `}</style>
             <div className=" p-4 " className={styles.paddingbetweennav}>
                 <div className="row">

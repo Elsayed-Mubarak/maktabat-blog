@@ -17,7 +17,7 @@ function LanguageSwitcher() {
 
     return (
         <>
-            <Button style={{ color: '#2f2e8b' }} color="secondary" id={title} size="sm"
+            <Button style={{ color: '#2f2e8b', width: '100px' }} color="secondary" id={title} size="sm"
                 onClick={(e) => changeLanguage(e.target.id.toString())}>{title}
             </Button>
 
