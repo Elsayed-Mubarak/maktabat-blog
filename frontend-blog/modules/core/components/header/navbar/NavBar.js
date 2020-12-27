@@ -5,7 +5,8 @@ import styles from './NavBar.module.css'
 import LanguageSwitcher from '../language_switcher/LanguageSwitcher'
 import Image from 'next/image'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-
+import { Container, Row, Col } from 'reactstrap';
+import MenuCard from '../menucard/MenuCard'
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -35,10 +36,11 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div style={{ 'color': '#2f2e8b' }} >
+      <div style={{ 'width': '100%' }} >
         <Navbar expand="lg" className={styles.nav} >
-          <Navbar.Brand href="/"><Image src="/images/logo.png" alt="Picture of the author" width={250} height={120} />
+          <Navbar.Brand href="/" className={styles.logo}><Image src="/images/logo.jpg" alt="Picture of the author" width={150} height={145}/>
           </Navbar.Brand>
+          <Nav.Link className={styles.kwareict} href="/" >Kwareict</Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -49,16 +51,25 @@ export default class NavBar extends React.Component {
                 onMouseLeave={this.onMouseLeave}
                 isOpen={this.state.dropdownOpen}
                 toggle={this.toggle}>
-                <DropdownToggle caret>Dropdown</DropdownToggle>
-                <DropdownMenu style={{ width: '500px' }}>
-                  <DropdownItem divider />
-                  <DropdownItem >Libarary Search Key</DropdownItem>
-                  <DropdownItem >Artificial Intelligence</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Publish Books</DropdownItem>
-                  <DropdownItem>Digital Libarary</DropdownItem>
-                  <DropdownItem>Digital Repository And Archive</DropdownItem>
-                  <DropdownItem divider />
+                <DropdownToggle className={styles.dropdowntoggle} caret>channels</DropdownToggle>
+                <DropdownMenu className={styles.dropdownmenu} >
+                  <Row >
+                    <Col xs="6" >
+                      <DropdownItem divider />
+                      <DropdownItem style={{ color: '#2f2e8b', fontWeight: 700 }}>PROUDUCT</DropdownItem>
+                      <DropdownItem divider />
+
+                      <DropdownItem style={{ color: '#2f2e8b', fontSize: '17px' }}>Libarary Search Key</DropdownItem>
+                      <DropdownItem style={{ color: '#2f2e8b', fontSize: '17px' }}>Artificial Intelligence</DropdownItem>
+                      <DropdownItem style={{ color: '#2f2e8b', fontSize: '17px' }}>Publish Books</DropdownItem>
+                      <DropdownItem style={{ color: '#2f2e8b', fontSize: '17px' }}>Digital Libarary</DropdownItem>
+                      <DropdownItem style={{ color: '#2f2e8b', fontSize: '17px' }}>Digital Repository And Archive</DropdownItem>
+                      <DropdownItem divider />
+                    </Col>
+                    <Col xs="6" style={{ float: 'right', display: 'flex' }}>
+                      <MenuCard />
+                    </Col>
+                  </Row>
                 </DropdownMenu>
               </Dropdown>
               <Nav.Link href="/about">About Us</Nav.Link>

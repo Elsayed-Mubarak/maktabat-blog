@@ -5,11 +5,34 @@
     margin-left: 70px;
     margin-right: 70px;
     color: #2f2e8b;
-   
   }
 
-.mr-auto{
-  position: relative;
-}
-  /* ........................................... */
+/* ..............DROPDOWN............................. */
 
+.kwareict{
+  font-weight:700;
+  font-size:25px;
+  margin-left:-25px; 
+  margin-right:30px;
+}
+
+
+.dropdownmenu{
+  width: 1120px; 
+  border-radius: 10px;
+margin-left: -300px;
+margin-top: 20px;
+}
+.dropdowntoggle{
+  color: #2f2e8b;
+  border-color: #f2f4ff;
+  
+}
+.dropdownitem{
+  color: #2f2e8b !important;
+}
+
+
+.logo{
+  max-width: 90px;
+}
